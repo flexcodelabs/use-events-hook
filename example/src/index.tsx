@@ -23,7 +23,11 @@ const Test = () => {
   });
 
   return (
-    <div>
+    <div
+      style={{
+        height: "200vh",
+      }}
+    >
       viewport size: {width}x{height}
       <button ref={buttonRef}>Text</button>
     </div>
