@@ -1,11 +1,5 @@
-import React, { FC, ReactNode } from "react";
+import useEventListener from "./useEventListener";
+import useWindowSize from "./useWindowSize";
+import useClickOutsideListener from "./useClickOutsideListener";
 
-interface PackageNameProps {
-  children: ReactNode;
-}
-
-const PackageName: FC<PackageNameProps> = ({ children }) => {
-  return <div>{children}</div>;
-};
-
-export default PackageName;
+export { useEventListener, useWindowSize, useClickOutsideListener };
